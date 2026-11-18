@@ -13,24 +13,30 @@
   <body class="p-8 space-y-4">
     <!-- Kotak ini harus memiliki lebar persis 342px dan warna background #2b2d42 -->
     <div
-      class="h-24 rounded-lg flex items-center justify-center text-white font-medium">
+      class="w-[342px] bg-[#2b2d42] h-24 rounded-lg flex items-center justify-center text-white font-medium">
       Kotak Ukuran Kustom
     </div>
 
     <!-- Teks ini harus memiliki ukuran font persis 27px dan warna #ef233c -->
-    <p>
+    <p class="text-[27px] text-[#ef233c]">
       Ini adalah teks dengan ukuran dan warna yang tidak ada di skala bawaan
       Tailwind.
     </p>
 
     <!-- Tombol ini harus memiliki margin-left persis 42.5px -->
-    <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg">
+    <button class="ml-[42.5px] bg-indigo-600 text-white px-4 py-2 rounded-lg">
       Tombol Geser
     </button>
   </body>
 </html>
 
 <!-- Note: 
-  1. Penulisan kode / sintaks yang digunakan: ...
-  2. Kesimpulan / Alasan: ...
+  1. Penulisan kode / sintaks yang digunakan: Kotak = w-[342px] bg-[#2b2d42] . Teks = text-[27px] text-[#ef233c] . Button = ml-[42.5px]
+  2. Kesimpulan / Alasan: Menggunakan [] . 
+  w-[342px] = memberikan weight berukuran 342pixel.
+  bg-[#2b2d42] = memberikan background dengan kode warna #2b2d42.
+  text-[27px] = untuk membuat text menjadi berukuran 27 pixel.
+  text-[#ef233c] = untuk memberikan text dengan kode warna #ef233c.
+  ml-[42.5px] = ml adalah singakatn tailwind yang artinya adalah margin-left, dengan nilai 42.5px.
+
 -->

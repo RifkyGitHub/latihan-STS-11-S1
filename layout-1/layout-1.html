@@ -5,10 +5,47 @@ Buat seperti yang ada di ./layout-1.png -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body class="min-h-screen flex items-center justify-center bg-gray-200">
+    <div
+      title="Wrapper"
+      class="bg-white w-full max-w-2xl p-7 rounded-2xl shadow-sm"
+    >
+      <section title="First Layer" class="mb-6">
+        <div
+          title="Banner Utama"
+          class="text-white bg-blue-600 h-44 rounded-xl flex items-center justify-center font-semibold"
+        >
+          Banner Utama
+        </div>
+      </section>
+      <section
+        title="Second Layer"
+        class="flex flex-col gap-4 border-b border-gray-200 pb-6 mb-6"
+      >
+        <div
+          title="Kotak 75%"
+          class="bg-sky-400 text-white w-3/4 py-4 px-5 rounded-xl font-semibold text-sm"
+        >
+          Kotak 75%
+        </div>
+        <div
+          title="Kotak 50%"
+          class="bg-teal-400 text-white w-1/2 py-4 px-5 rounded-xl font-semibold text-sm"
+        >
+          Kotak 50%
+        </div>
+      </section>
+      <section title="Third Layer" class="flex items-center gap-5">
+        <div
+          title="Circle"
+          class="bg-amber-500 w-24 h-24 rounded-full"
+        ></div>
+        <div title="Rectangle" class="bg-rose-500 w-48 h-24 rounded-2xl"></div>
+      </section>
+    </div>
+  </body>
 </html>
