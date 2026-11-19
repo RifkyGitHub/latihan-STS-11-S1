@@ -13,14 +13,15 @@
     <style>
       /* Simulasi CSS bawaan template / library lama yang sulit ditimpa */
       .kotak-kustom {
-        background-color: #d1d5db;
+        background-color: #d1d5db !important;
         color: #1f2937;
       }
+
     </style>
   </head>
   <body class="p-8">
     <!-- Tambahkan class Tailwind dengan Important Modifier pada elemen di bawah ini -->
-    <div class="kotak-kustom p-6 rounded-xl font-bold shadow-md bg-red-500">
+    <div class="kotak-kustom p-6 rounded-xl font-bold shadow-md !bg-red-500 !text-white">
       Kotak ini masih abu-abu karena kalah prioritas dengan CSS manual. Ubah
       warnanya!
     </div>
@@ -28,6 +29,10 @@
 </html>
 
 <!-- Note:   
-  1. Penulisan kode / sintaks yang digunakan: ...
-  2. Kesimpulan / Alasan: ...
+  1. Penulisan kode / sintaks yang digunakan: Pada CSS bawaan menggunakan atribute !important, dan di CSS Tailwind menggunakan !bg-red-500 dan !text-white
+  2. Kesimpulan / Alasan: 
+  !important = untuk memprioritaskan.
+  !bg-red-500 = memaksa background menjadi warna merah .
+  !text-white = memaksa teks menjadi warna putih .
+
 -->

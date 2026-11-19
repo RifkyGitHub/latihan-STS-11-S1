@@ -4,6 +4,7 @@
   2. Input teks harus berubah warna garis pinggirnya (border) atau menyala saat sedang diklik/diketik (focus).
 -->
 
+
 <!doctype html>
 <html lang="id">
   <head>
@@ -25,13 +26,13 @@
       <input
         type="text"
         placeholder="Ketik nama kamu di sini..."
-        class="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none" />
+        class="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none focus:border-pink-600" />
     </div>
 
     <!-- Tambahkan pseudo-class hover dan active pada tombol ini -->
     <div>
       <button
-        class="w-full bg-indigo-600 text-white font-medium py-2 rounded-lg transition shadow">
+        class="w-full bg-yellow-600 text-white font-medium py-2 rounded-lg transition shadow hover:bg-yellow-500 active:bg-yellow-700">
         Kirim Data
       </button>
     </div>
@@ -39,6 +40,9 @@
 </html>
 
 <!-- Note: 
-  1. Penulisan kode / sintaks yang digunakan: ...
-  2. Kesimpulan / Alasan: ...
+  1. Penulisan kode / sintaks yang digunakan: focus:border-pink-600 , hover:bg-yellow-500 , active:bg-yellow-700
+  2. Kesimpulan / Alasan: 
+  focus:border-pink-600 = jika di klik atau di ketik akan muncul border warna pink 
+  hover:bg-yellow-500 = klo di arahin kursornya berubah jadi warna kuning 
+  active:bg-yellow-500 = klo di klik atau di tekan jadi warna kuning 
 -->
